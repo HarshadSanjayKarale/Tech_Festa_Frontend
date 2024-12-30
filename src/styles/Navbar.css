@@ -1,0 +1,55 @@
+.navbar {
+    background-color: var(--bg-color);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #eb0aff, #7b84fe); /* Example gradient */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    color: transparent; /* Makes the text color transparent to show the gradient */
+    text-shadow: 0 0 10px rgba(235, 10, 255, 0.7), 0 0 10px rgba(26, 10, 255, 0.6); /* Glow effect */
+}
+  
+  
+  
+  .navbar-links {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-link {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: var(--primary-color);
+  }
+  
+  .navbar-toggle {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    color: var(--text-color);
+  }
+  
+  

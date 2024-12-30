@@ -1,0 +1,79 @@
+#root {
+  width:100%;
+  padding: 0.1rem;
+  text-align: center;
+}
+
+
+
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #10b981;
+  --bg-color: #1a1a1a;
+  --bg-color-light: #2a2a2a;
+  --text-color: #ffffff;
+  --text-color-muted: #a0aec0;
+  --border-color: #4a5568;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App.light {
+  --bg-color: #ffffff;
+  --bg-color-light: #f7fafc;
+  --text-color: #1a202c;
+  --text-color-muted: #4a5568;
+  --border-color: #e2e8f0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
