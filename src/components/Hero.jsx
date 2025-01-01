@@ -18,12 +18,13 @@ export default function Hero() {
 
   return (
     <div className="hero section">
-      <div className="container">
+      <div className="container"
+                style={{
+                  transform: `translateY(${scrollPosition * 0.1}px)`
+                }}>
         <div 
           className="text-content" 
-          style={{
-            transform: `translateY(${scrollPosition * 0.1}px)`
-          }}
+          
         >
           <h1>
             <span className="gradient-text-1">Travel Safely with </span>

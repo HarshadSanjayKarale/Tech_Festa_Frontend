@@ -21,7 +21,7 @@
     background-image: linear-gradient(to right, #eb0aff, #7b84fe); /* Example gradient */
     -webkit-background-clip: text; /* Clips the background to the text */
     color: transparent; /* Makes the text color transparent to show the gradient */
-    text-shadow: 0 0 10px rgba(235, 10, 255, 0.7), 0 0 10px rgba(26, 10, 255, 0.6); /* Glow effect */
+    text-shadow: 0 0 5px rgba(235, 10, 255, 0.7), 0 0 5px rgba(26, 10, 255, 0.6); /* Glow effect */
 }
   
   
@@ -52,4 +52,34 @@
     color: var(--text-color);
   }
   
+  .toggle-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color, #f0f0f0); /* Fallback if var not defined */
+    border: 2px solid #cccccc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--icon-color, #000); /* Default to black for visibility */
+  }
+  
+  .toggle-button.dark {
+    background-color: #333333;
+    border-color: #555555;
+    color: #f1c40f; /* Sun yellow for dark mode */
+  }
+  
+  .toggle-button.light {
+    background-color: #ffffff;
+    border-color: #cccccc;
+    color: #3498db; /* Moon blue for light mode */
+  }
+  
+  .toggle-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
   
