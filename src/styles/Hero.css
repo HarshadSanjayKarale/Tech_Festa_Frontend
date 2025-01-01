@@ -1,7 +1,22 @@
 /* Hero Section Styles */
 .hero {
-    background-color: var(--bg-color);
-  }
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--bg-color); /* Add a fallback color */
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
   
   .hero .container {
     display: flex;

@@ -1,13 +1,16 @@
 .navbar {
-    background-color: var(--bg-color);
-    padding: 1rem 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
-  
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)); /* Black gradient with transparency */
+  backdrop-filter: blur(10px); /* Applies blur effect to the background for a glass effect */
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Light border to enhance glass effect */
+}
+
   .navbar .container {
     display: flex;
     justify-content: space-between;
